@@ -3,8 +3,8 @@ the fucntions generate the password from the class attributes of staff id and st
 also function displays the class ticket created
 
 results from activity was:
-Ticket ID: S1001
+Ticket ID: 1234
 Staff Name: Alice
 Staff id: S1001
 Status: Confirmed
-Password:S1Ali
+Password Generated: S1Ali
