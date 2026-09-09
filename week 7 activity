@@ -1,0 +1,28 @@
+"""Processing Object Oriented Programming in week 7 activity"""
+#mention the attributes of class
+class Ticket:
+    def __init__(self, ticket_id, staff_id, staff_name, status):
+        self.ticket_id = ticket_id
+        self.staff_id = staff_id
+        self.staff_name = staff_name
+        self.status = status
+
+#the two functions below are the methods of the class
+    #display the attributes of the class
+    def display_ticket(self):
+        print(f'Ticket ID: {self.staff_id}')
+        print(f'Staff Name: {self.staff_name}')
+        print(f'Staff id: {self.staff_id}')
+        print(f'Status: {self.status}')
+
+    #generate the password
+    def generate_password(self):
+    #generate password with first 2 character of staff id and first 3 characters of staff name
+        new_password = self.staff_id[0:2] + self.staff_name[0:3]
+        return new_password
+
+#call the function
+ticket1 = Ticket('1234','S1001','Alice', 'Confirmed')
+ticket1.display_ticket()
+password = ticket1.generate_password()
+print(f'Password:{password}')
